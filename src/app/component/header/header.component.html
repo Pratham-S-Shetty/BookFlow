@@ -1,0 +1,114 @@
+<div class="dimming-effect" id="dimmingEffect" (click)="closeNav()">
+  <div
+    id="mySidebar"
+    class="sidebar flex flex-column"
+    style="background-image: linear-gradient(to right top, #fffcfc, #9698a0)"
+  >
+    <a href="javascript:void(0)" class="closebtn rounded-4" (click)="closeNav()"
+      >×</a
+    >
+    <a href="#" class="text-black">Home</a>
+    <a href="#" class="text-black">Trending</a>
+    <a href="#" class="text-black">Subscriptions</a>
+    <a href="#" class="text-black">Library</a>
+    <a href="#" class="text-black">History</a>
+    <a href="#" class="text-black">Watch later</a>
+    <a href="#" class="text-black">Liked Article</a>
+  </div>
+</div>
+
+<nav
+  class="navbar navbar-expand-lg navbar-dark bg-warning"
+  style="background-image: linear-gradient(to right top, #fffcfc, #9698a0)"
+>
+  <div class="container-fluid">
+    <button class="openbtn" (click)="openNav()">☰</button>
+    <a class="navbar-brand text-black" href="#" style="padding-left: 10px"
+      >BookFlow</a
+    >
+    <div class="search-container" style="margin-left: 200px">
+      <form class="d-flex">
+        <input
+          class="form-control rounded-start-pill"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-success rounded-end-circle"
+          type="submit"
+        >
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item mt-1">
+          <a class="nav-link" href="#"><i class="fas fa-upload"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mt-1" href="#"><i class="fas fa-bell"></i></a>
+        </li>
+        <li class="nav-item">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+          </button>
+        </li>
+      </ul>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog me-5 mt-5" style="width: 150px">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Profile</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Camilie jersey</p>
+              <p>billing</p>
+              <p>documents</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

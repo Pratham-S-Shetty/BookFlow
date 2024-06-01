@@ -1,0 +1,101 @@
+body {
+  overflow-x: hidden;
+}
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.5s;
+  z-index: 2;
+}
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  background-color: #575757;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+.navbar-nav .nav-item .nav-link i {
+  font-size: 1.5rem;
+}
+.navbar {
+  justify-content: space-between;
+}
+.search-container {
+  flex-grow: 1;
+  max-width: 600px;
+}
+.search-container form {
+  display: flex;
+  justify-content: center;
+}
+.search-container input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.search-container button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.dimming-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+.left-container {
+  background-color: #ffffff;
+}
+.right-container {
+  background-color: #f8f9fa;
+}
+.document-card {
+  transition: transform 0.3s ease;
+}
+.document-card:hover {
+  transform: scale(1.05);
+}
+.description-card {
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  background: linear-gradient(45deg, #e0eafc, #cfdef3);
+}
+.description-card:hover {
+  border-color: #007bff;
+  transform: scale(1.05);
+}
+.container-custom {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.dimmed .card {
+  opacity: 0.5;
+}
