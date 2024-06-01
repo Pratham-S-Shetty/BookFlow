@@ -38,10 +38,6 @@ We welcome contributions from the community! Feel free to fork the repository, m
 
 Book Flow is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute this software in accordance with the license terms.
 
----
-
-This description highlights the core features and benefits of Book Flow, provides instructions on getting started, and encourages contributions from the community. Feel free to customize any part of the description to better fit your specific project details.
-
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
